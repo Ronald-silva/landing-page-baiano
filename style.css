@@ -3,15 +3,14 @@
     padding: 0;
 }
 body{
-    background-color: red !important;
-    
-
+    background-color: black;
 }
 .container{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+
 .icon-header{
     display: flex;
     justify-content:space-evenly;
@@ -20,7 +19,6 @@ body{
     font-weight: bold;
     font-family:'Lato';
     background-color: rgb(56, 52, 52);
-   
 }
 #lion img{
     width: 5rem;
@@ -51,9 +49,21 @@ audio{
     border: solid 2px yellowgreen;
     border-radius: 2rem;
 }
+h1{
+    border: solid 2px yellowgreen;
+    border-radius: 2rem;
+    width: 50rem;
+    margin-left: 6.4rem;
+    color: chartreuse;
+}
+#AB{
+    color: chartreuse;
+    text-decoration: none;
+
+}
 #AB:hover{
     text-decoration: underline;
-    color:darkgray
+    color:aquamarine;
 }
 .rs{
     display: flex;
@@ -62,18 +72,11 @@ audio{
     width: 100%;
     height: auto;
 }
-#AB, h1{
-    color:aqua;
-    text-decoration: none;
-}  
+ 
 footer{
     background-color:yellowgreen;
     width: 100%;
     height: auto;
-    
-    
-  
-    
 }
 .ima{
     width: 2rem;
