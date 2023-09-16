@@ -4,39 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/WhatsApp Image 2023-09-12 at 00.52.49.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo-white.jpeg" type="image/x-icon">
     <title>Tocaias Band</title>
 </head>
 <body>
-  <div class="container">
-    <header>
-        <nav class="icon-header">
-          <div id="lion">
-            <img src="images/WhatsApp Image 2023-09-12 at 00.52.49.jpeg">
-          </div>
-          <!-- <audio controls autoplay> -->
-            <source src="audio/House Of Shem   Thinking About Yo.mp3">
-          </audio>
-            <a class="nav" href="service.html" target="_blank">Shows</a>
-            <a class="nav" href="experience.html" target="_blank">Experiências</a>
-            <a class="nav" href="principle.html" target="_blank">Principios</a>
-        </nav>
-    </header>
-    <main>
-        <div class="description">
-            <h1>Ola! Meu nome é <a id="AB" href="https://www.instagram.com/andersonbitencourtetocaiasband/" target="_blank">Anderson Bitencourt</a> sou cantor,<br> guitarrista e lider da banda Tocaias Band.</h1>
-            <img id="foto-main" src="images/tocaias-foto.webp" alt="">
-        </div>
-    </main>
-    <footer>
-        <div class="rs">
-            <a href="https://www.instagram.com/andersonbitencourtetocaiasband/" target="_blank"><img class="ima" src="images/instagram.png" alt=""></a>
-            <a href="https://api.whatsapp.com/send?phone=5585988368997" target="_blank"><img class="ima" id="whats" src="images/logo-whatsapp-png.webp" alt=""></a>
+  <header>
+    <div id="lion">
+      <img src="images/logo-white.jpeg">
+    </div>
+    
+    <div class="nav">
+      <div class="audio">
+        <audio controls>
+          <source type="audio/mpeg" src="audio/HouseOfShemThinkingAboutYo.mp3">
+        </audio>
+      </div>
 
-            <a href="https://www.youtube.com/@tocaiasband1811" target="_blank"><img class="ima"  src="images/iconeyoutube.webp" alt=""></a>
-            <a  href="mailto:andersonvitencourt81@gmail.com;" target="_blank"><img class="ima" src="images/6244438.png" alt=""></a>
-        </div>
-    </footer>
-  </div>
+      <button id="shows" title="shows" type="button">Shows</button>
+      <button id="experiencias" title="Experiências" type="button">Experiências</button>
+      <button id="principios" title="Princípios" type="button">Princípios</button>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <div class="description">
+      <h1>Ola! Meu nome é Anderson Bitencourt sou cantor,<br>
+        guitarrista e líder da banda Tocaias Band.
+      </h1>
+    </div>
+    <div id="foto-main"></div>
+  </main>
+
+  <footer class="social-media">
+    <a href="https://www.instagram.com/andersonbitencourtetocaiasband/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=5585988368997" target="_blank"><i class="fa-brands fa-square-whatsapp fa-2xl"></i></a>
+
+    <a href="https://www.youtube.com/@tocaiasband1811" target="_blank"><i class="fa-brands fa-square-youtube fa-2xl"></i></a>
+    <a  href="mailto:andersonvitencourt81@gmail.com;" target="_blank"><i class="fa-solid fa-square-envelope fa-2xl"></i></a>
+  </footer>
+
 </body>
+
+<script src="https://kit.fontawesome.com/2dc5fb0253.js" crossorigin="anonymous"></script>
+
+<script>
+  const shows = document.getElementById("shows");
+  const experiencias = document.getElementById("experiencias");
+  const principios = document.getElementById("principios");
+
+  shows.addEventListener("click", function() {
+      window.location.href = "./service.html";
+  });
+
+  experiencias.addEventListener("click", function() {
+      window.location.href = "./experience.html";
+  });
+
+  principios.addEventListener("click", function() {
+      window.location.href = "./principle.html";
+  });
+</script>
+
 </html>
