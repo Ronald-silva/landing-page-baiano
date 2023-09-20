@@ -1,59 +1,56 @@
 *{
     margin: 0;
+    padding: 0;
 }
-
 body {
     overflow: hidden;
+    
 }
-
 header {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
+    display: flex; 
+   
     align-items: center;
-    height: 7rem;
-    width: 100vw;
-    background-color: #383434;
+    height: 10%;
+    width: 100%;
+    background-color: #383434; 
 }
-
-#lion img{
-    width: 5rem;
-    margin-left: 2rem;
+#lion{
+    width: 4rem;
     border: solid 3px black;
     border-radius: 50%;
+    
 }
-
 .nav{
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content:space-between;
 }
-
-button {
-    height: 2.6rem !important;
-    width: 10rem;
+button, #audio {
+    height: 2rem !important;
+    width: 7rem;
 }
-
 .nav audio, .nav button {
     height: 2.5rem;
     font-weight: bold;
-    font-family:'Lato'; /* está faltando vc importar a fonte */
+    font-family:'Lato', sans-serif;
+    font-family: 'Sriracha', cursive; 
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color:#fafafa;
     background-color: transparent;
     border: solid 2px #9acd32;
     border-radius: 2rem;
     cursor: pointer;
-    margin-right: .7rem;
+    margin-right: 0.5rem;
+    width: 8rem;
+    
 }
-
 .nav audio:hover, .nav button:hover {
     background-color:#a9a9a9;
     border: solid 2px #d0f489;
-    text-align: center;
     transition: background-color .3s;
 }
-
 .main-container {
     display: flex;
     flex-direction: column;
@@ -62,14 +59,12 @@ button {
     text-align: center;
     background-color: #000;
     width: 100vw;
-    height: 80vh;
+    height: 80%;
 }
-
 .description {
     border-radius: 2rem;
     color: #7fff00;
 }
-
 #foto-main{
     align-self: center;
     width: 70vw;
@@ -79,23 +74,20 @@ button {
     background: url('/images/tocaias-foto.webp');
     background-size: cover;
 }
-
 footer{
-    background-color:#9acd32;
+    background-color: yellowgreen;
     width: 100%;
-    height: 5.2rem;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 footer a {
     text-decoration: none;
     color: #000;
     margin: .7rem;
     cursor: pointer;
 }
-
 footer a:hover {
     text-decoration: none;
     margin: .7rem;
